@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<title>赛事报名</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial;
+    background:#0f0c29;
+    color:white;
+}
+
+.container{
+    width:90%;
+    max-width:650px;
+    margin:40px auto;
+    background:#1a1a2e;
+    padding:25px;
+    border-radius:10px;
+}
+
+h2{
+    color:#00ffe7;
+}
+
+input, select{
+    width:100%;
+    padding:10px;
+    margin:6px 0;
+    border:none;
+    border-radius:6px;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    background:#00ffe7;
+    border:none;
+    border-radius:6px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>🎮 战队报名</h2>
+
+<form method="POST" action="/submit">
+
+<input name="team" placeholder="战队名称" required>
+
+<select name="college" required>
+<option value="">请选择学院</option>
+<option>旅游与大健康学院</option>
+<option>文学院</option>
+<option>社会治理学院</option>
+<option>商学院</option>
+<option>信息与智能工程学院</option>
+<option>艺术创意与数字设计学院</option>
+<option>新能源与智能网联汽车学院</option>
+</select>
+
+<input name="class" placeholder="班级" required>
+
+<input name="leader" placeholder="队长姓名" required>
+<input name="phone" placeholder="联系电话" required>
+
+<input name="member1" placeholder="队员1">
+<input name="member2" placeholder="队员2">
+<input name="member3" placeholder="队员3">
+<input name="member4" placeholder="队员4">
+
+<button type="submit">提交报名</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
